@@ -73,6 +73,7 @@ $(document).ready(function(){
     });
 });
 
+// email section
 function sendMail() {
     var params = {
       name: document.getElementById("name").value,
@@ -82,8 +83,8 @@ function sendMail() {
     };
    
   
-    const serviceID = "service_jrqm8p7";
-    const templateID = "template_mk03zq7";
+    const serviceID = "enter SERVICE_KEY";  //enter SERVICE_KEY here
+    const templateID = "enter TEMPLATE_KEY"; //enter TEMPLATE_KEY here
   
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
